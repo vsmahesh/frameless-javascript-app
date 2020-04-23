@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link rel="stylesheet" href="assets/ratchet-v2.0.2/css/ratchet.min.css" />
+    <link
+      href="assets/ratchet-v2.0.2/css/ratchet-theme-ios.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="assets/ratchet-v2.0.2/js/ratchet.min.js"></script>
+    <script src="./index.js"></script>
+    <style>
+      .content {
+        padding-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav">
+      <h1 class="title">Home</h1>
+    </header>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+      <div class="content-padded">
+        <h4>Welcome <em>John!</em></h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga
+          repudiandae, est nemo rem sequi!
+        </p>
+      </div>
+
+      <div class="card content-padded">
+        <h5>To Dos!</h5>
+        <ul class="table-view" id="todoContainer"></ul>
+      </div>
+      <nav class="bar bar-tab">
+        <a class="tab-item active" href="#">
+          <span class="icon icon-home"></span>
+          <span class="tab-label">Home</span>
+        </a>
+        <a class="tab-item" href="/gallery.html">
+          <span class="icon icon-pages"></span>
+          <span class="tab-label">Gallery</span>
+        </a>
+        <a class="tab-item" href="/contact.html">
+          <span class="icon icon-compose"></span>
+          <span class="tab-label">Contact</span>
+        </a>
+        <a class="tab-item" href="/settings.html">
+          <span class="icon icon-gear"></span>
+          <span class="tab-label">Settings</span>
+        </a>
+      </nav>
+    </div>
+  </body>
+</html>
