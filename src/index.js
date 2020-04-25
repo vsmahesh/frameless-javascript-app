@@ -1,7 +1,12 @@
 let apiUrl = "https://jsonplaceholder.typicode.com/users/1/todos";
 document.addEventListener("readystatechange", () => {
-  let todoContainer = document.querySelector("#todoContainer");
+  if (document.readyState === "complete") {
+    initApplication();
+  }
+});
 
+function initApplication() {
+  let todoContainer = document.querySelector("#todoContainer");
   fetch(apiUrl)
     .then((response) => response.json())
     .then((json) =>
@@ -23,4 +28,4 @@ document.addEventListener("readystatechange", () => {
           todoContainer.appendChild(element);
         })
     );
-});
+}

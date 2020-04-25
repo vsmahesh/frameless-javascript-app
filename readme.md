@@ -1,5 +1,37 @@
 # FL - Framework less
 
+## Step 2
+
+### Let's have a webserver
+
+- npm - for package management
+- Install http-server npm package
+  - `npm install http-server`
+  - `node_modules` folder & `package-lock.json` file
+- How to start the server?
+  - Initialize node project file
+    - `npm init -y`
+    - `package.json` file
+  - Configure npm run command
+    - `npm run serve`
+- Adding .gitignore to exclude node_modules
+  - `package.json` & `package-lock.json` are required
+
+### Problems
+
+- Violation DRY principle - https://en.wikipedia.org/wiki/Don%27t_repeat_yourself
+
+### Goals from last step
+
+- &#9745; Introduce Webserver
+<!-- - &#9744; Stop this session -->
+
+### Next Steps
+
+- Webcomponents - https://developer.mozilla.org/en-US/docs/Web/Web_Components
+
+---
+
 ## Step 1
 
 This is a simple mobile web that contains three pages - Home, Gallery, Contact and Settings.
@@ -10,10 +42,10 @@ This is a simple mobile web that contains three pages - Home, Gallery, Contact a
 - Contact and Settings page do nothing specific
 - Each pages has its own html and code behind javascript
 
-## Problems
+### Problems
 
 - Unable to navigate to other pages by clicking the bottom link
 
-## Next Steps
+### Next Steps
 
 - Serve in a webserver

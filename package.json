@@ -1,0 +1,17 @@
+{
+  "name": "FL",
+  "version": "1.0.0",
+  "description": "- npm - for package management\r - Install http-server npm package\r   - `npm install http-server`\r   - `node_modules` folder & `package-lock.json` file\r - How to start the server?\r   - Initialize node project file\r   - Configure npm run command",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "^0.12.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "serve": "http-server ./src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
