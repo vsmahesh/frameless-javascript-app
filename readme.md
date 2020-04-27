@@ -1,5 +1,28 @@
 # FL - Framework less
 
+## Step 3 - A
+
+### Let's build web components
+
+- Hello world component
+- Bottom components
+
+### Goals from last step
+
+- &#9744; Violation of DRY principle
+  - Achieved partially but there are problems
+  <!-- - &#9745;&#9744; Stop this session -->
+
+### Problems
+
+- No way to set active status on a page level
+
+### Next Steps
+
+- More into Webcomponents
+
+---
+
 ## Step 2
 
 ### Let's have a webserver
