@@ -21,34 +21,17 @@
   </head>
   <body>
     <!-- Make sure all your bars are the first things in your <body> -->
-    <header class="bar bar-nav">
-      <h1 class="title">Gallery</h1>
-    </header>
+    <header is="page-header" title="Gallery" class="bar bar-nav"></header>
 
     <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
     <div class="content">
       <div id="imageContainer"></div>
     </div>
 
-    <nav class="bar bar-tab">
-      <a class="tab-item" href="/index.html">
-        <span class="icon icon-home"></span>
-        <span class="tab-label">Home</span>
-      </a>
-      <a class="tab-item active">
-        <span class="icon icon-pages"></span>
-        <span class="tab-label">Gallery</span>
-      </a>
-      <a class="tab-item" href="/contact.html">
-        <span class="icon icon-compose"></span>
-        <span class="tab-label">Contact</span>
-      </a>
-      <a class="tab-item" href="/settings.html">
-        <span class="icon icon-gear"></span>
-        <span class="tab-label">Settings</span>
-      </a>
-    </nav>
+    <main-nav active="gallery"></main-nav>
     <!-- Include the compiled Ratchet JS -->
     <!-- <script src="assets/ratchet-v2.0.2/js/ratchet.min.js"></script> -->
+    <script src="./components/navigation/navigation.js"></script>
+    <script src="./components/header/header.js"></script>
   </body>
 </html>

@@ -26,9 +26,7 @@
   </head>
   <body>
     <!-- Make sure all your bars are the first things in your <body> -->
-    <header class="bar bar-nav">
-      <h1 class="title">Home</h1>
-    </header>
+    <header is="page-header" title="Home" class="bar bar-nav"></header>
 
     <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
     <div class="content">
@@ -39,32 +37,16 @@
           repudiandae, est nemo rem sequi!
         </p>
       </div>
-
       <div class="card content-padded">
         <h5>To Dos!</h5>
         <ul class="table-view" id="todoContainer"></ul>
       </div>
     </div>
 
-    <nav class="bar bar-tab">
-      <a class="tab-item active">
-        <span class="icon icon-home"></span>
-        <span class="tab-label">Home</span>
-      </a>
-      <a class="tab-item" href="/gallery.html">
-        <span class="icon icon-pages"></span>
-        <span class="tab-label">Gallery</span>
-      </a>
-      <a class="tab-item" href="/contact.html">
-        <span class="icon icon-compose"></span>
-        <span class="tab-label">Contact</span>
-      </a>
-      <a class="tab-item" href="/settings.html">
-        <span class="icon icon-gear"></span>
-        <span class="tab-label">Settings</span>
-      </a>
-    </nav>
+    <main-nav active="home"></main-nav>
     <!-- Include the compiled Ratchet JS -->
     <!-- <script src="assets/ratchet-v2.0.2/js/ratchet.min.js"></script> -->
+    <script src="./components/navigation/navigation.js"></script>
+    <script src="./components/header/header.js"></script>
   </body>
 </html>

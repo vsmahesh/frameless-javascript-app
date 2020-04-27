@@ -1,5 +1,32 @@
 # FL - Framework less
 
+## Step 3 - B
+
+### Let's improve our web components
+
+- Improvements on the navigation component
+  - Moving logic to ConnectedCallback
+  - introduced logic to show selection based on active attribute
+  - Creating elements instead of innerHtml
+- Webcomponent for extending existing components
+- Adding a library
+
+### Goals from last step
+
+- &#9745; Violation of DRY principle
+  <!-- - &#9745;&#9744; -->
+
+### Problems
+
+- Have to refering each component js files and its reference files into html
+- Writing html in javascript! Not feeling good.
+
+### Next Steps
+
+- Javascript Module bundler
+
+---
+
 ## Step 3 - A
 
 ### Let's build web components
