@@ -1,11 +1,15 @@
+import { Logger } from "./libs/logger";
+Logger.setName("Index Page");
 let apiUrl = "https://jsonplaceholder.typicode.com/users/1/todos";
 document.addEventListener("readystatechange", () => {
   if (document.readyState === "complete") {
+    Logger.log("Document readyState is ", document.readyState);
     initApplication();
   }
 });
 
 function initApplication() {
+  Logger.log("Initializing Application");
   let todoContainer = document.querySelector("#todoContainer");
   fetch(apiUrl)
     .then((response) => response.json())

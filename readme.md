@@ -1,5 +1,39 @@
 # FL - Framework less
 
+## Step 4 - A
+
+### Introducing module bundler
+
+- Module bundler need a way to identify the dependencies
+  - Useful by the IDE as well
+  - ES Modules
+    - https://exploringjs.com/es6/ch_modules.html
+    - https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/
+  - Logger example
+- Configuring Webpack
+  - npm install & script configuration
+    - `npm install -D webpack webpack-cli`
+  - webpack.config.js
+
+### Goals from last step
+
+- &#9744;Have to refering each component js files and its reference files into html
+  - The original problem is not solved; but now we have a way
+- &#9744;Writing html in javascript! Not feeling good.
+  <!-- - &#9745;&#9744; -->
+
+### Problems
+
+- Have to refering each component js files and its reference files into html
+- Writing html in javascript! Not feeling good.
+- Better way to organise the files
+
+### Next Steps
+
+- Improvements on code organisation
+
+---
+
 ## Step 3 - B
 
 ### Let's improve our web components
