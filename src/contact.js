@@ -1,4 +1,9 @@
+import { Logger } from "./libs/logger";
+import { ComponentModule } from "./components";
+
+ComponentModule.init();
+Logger.setName("Contact");
 document.addEventListener("readystatechange", () => {
   // Do something for the contact page
-  console.log("Contact page is ready!");
+  Logger.log("Contact page is ready!");
 });

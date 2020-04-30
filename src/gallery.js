@@ -1,3 +1,8 @@
+import { Logger } from "./libs/logger";
+import { ComponentModule } from "./components";
+
+ComponentModule.init();
+Logger.setName("Gallery.js");
 let apiUrl = "https://jsonplaceholder.typicode.com/albums/1/photos";
 _Log("Setup apiUrl", apiUrl);
 document.addEventListener("readystatechange", () => {
@@ -33,5 +38,5 @@ function initApplication() {
 }
 
 function _Log(...message) {
-  console.log("[Gallery.js]", ...message);
+  Logger.log(...message);
 }

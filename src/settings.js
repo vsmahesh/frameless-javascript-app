@@ -1,4 +1,9 @@
+import { Logger } from "./libs/logger";
+import { ComponentModule } from "./components";
+
+ComponentModule.init();
+Logger.setName("Settings.js");
 document.addEventListener("readystatechange", () => {
   // Do something for the settings page
-  console.log("Settings page is ready!");
+  Logger.log("Settings page is ready!");
 });

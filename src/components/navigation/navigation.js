@@ -1,4 +1,4 @@
-class Navigation extends HTMLElement {
+export class Navigation extends HTMLElement {
   constructor() {
     super();
   }
@@ -54,5 +54,4 @@ class Navigation extends HTMLElement {
     console.log("[Navigation.js]", ...messages);
   }
 }
-
 customElements.define("main-nav", Navigation);

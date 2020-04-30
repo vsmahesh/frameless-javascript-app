@@ -1,4 +1,4 @@
-class PageHeader extends HTMLElement {
+export class PageHeader extends HTMLElement {
   constructor() {
     super();
   }
@@ -9,5 +9,4 @@ class PageHeader extends HTMLElement {
     this.innerHTML = `<h1 class="title">${title}</h1>`;
   }
 }
-
 customElements.define("page-header", PageHeader, { extends: "header" });

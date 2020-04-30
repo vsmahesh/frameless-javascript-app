@@ -1,5 +1,32 @@
 # FL - Framework less
 
+## Step 5
+
+### Get rid of the component master register
+
+- Define process should be inside the component itself
+  - Move `customElements.define` into component js file
+  - Find a workaround for tree-shaking
+- ComponentModule will be just a module that wraps a set of components
+  - Is this the same reason why angular also has a component array in the module?
+
+### Goals from last step
+
+- &#9744; Writing html in javascript! Not feeling good.
+
+- &#9745; There is a master list of components; earlier model was better.
+  <!-- - &#9745;&#9744; -->
+
+### Problems
+
+- Writing html in javascript! Not feeling good.
+
+### Next Steps
+
+- html in '.html' file & javascript in '.js' file
+
+---
+
 ## Step 4 - B
 
 ### Improving code organisation

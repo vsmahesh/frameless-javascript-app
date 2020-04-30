@@ -1,4 +1,7 @@
 import { Logger } from "./libs/logger";
+import { ComponentModule } from "./components";
+ComponentModule.init();
+
 Logger.setName("Index Page");
 let apiUrl = "https://jsonplaceholder.typicode.com/users/1/todos";
 document.addEventListener("readystatechange", () => {
