@@ -1,5 +1,36 @@
 # FL - Framework less
 
+## Step 4 - B
+
+### Improving code organisation
+
+- Introducing `dist` folder for output
+  - Stategy for copying static files
+    - install webpack plugin `npm install -D copy-webpack-plugin`
+    - webpack config changes
+- Compile other applications as well
+  - Use Logger
+  - Configuring Webpack
+- Refer web components the same way
+
+### Goals from last step
+
+- &#9745; Have to refering each component js files and its reference files into html
+- &#9744; Writing html in javascript! Not feeling good.
+  <!-- - &#9745;&#9744; -->
+
+### Problems
+
+- Writing html in javascript! Not feeling good.
+
+- There is a master list of components; earlier model was better.
+
+### Next Steps
+
+- Get rid of the master list of components
+
+---
+
 ## Step 4 - A
 
 ### Introducing module bundler
