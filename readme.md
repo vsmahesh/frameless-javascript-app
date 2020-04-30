@@ -1,5 +1,35 @@
 # FL - Framework less
 
+## Step 6
+
+### Move Component html into an html file
+
+- Refactor the header component
+  - Move html to a different file
+  - Webpack loader configuration for html import
+    - `npm install -D html-loader`
+    - changes in webpack.config.js
+- Refactor the navigation component
+
+### Goals from last step
+
+- &#9745; Writing html in javascript! Not feeling good.
+  <!-- - &#9745;&#9744; -->
+
+### Problems
+
+- CSS inside the html affecting other components
+- DRY again
+  - Setting the innerHTML from the html file
+  - Line to Define the component. It is kind of repeating; isn't it?
+- Limitations of the current modal
+
+### Next Steps
+
+- Shadow DOM
+
+---
+
 ## Step 5
 
 ### Get rid of the component master register

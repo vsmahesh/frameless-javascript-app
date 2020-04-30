@@ -1,57 +1,22 @@
+import * as html from "./navigation.html";
+import { Logger } from "../../libs/logger";
 export class Navigation extends HTMLElement {
   constructor() {
     super();
+    Logger.setName("Navigation");
   }
   connectedCallback() {
-    const element = document.createElement("nav");
-    element.className = "bar bar-tab";
+    this.innerHTML = html;
 
     const active = this.attributes["active"]
       ? this.attributes["active"].value
       : undefined;
-    [
-      { key: "home", label: "Home", url: "/index.html", icon: "home" },
-      { key: "gallery", label: "Gallery", url: "/gallery.html", icon: "pages" },
-      {
-        key: "contact",
-        label: "Contact",
-        url: "/contact.html",
-        icon: "compose",
-      },
-      {
-        key: "settings",
-        label: "Settings",
-        url: "/settings.html",
-        icon: "gear",
-      },
-    ]
-      .map((menuItem) => {
-        const link = document.createElement("a");
-        link.className = `tab-item${active === menuItem.key ? " active" : ""}`;
-        if (active !== menuItem.key) {
-          link.href = menuItem.url;
-        }
 
-        // Icon
-        const spanIcon = document.createElement("span");
-        spanIcon.className = `icon icon-${menuItem.icon}`;
-        link.appendChild(spanIcon);
+    const menuItem = document.querySelector(`#${active}`);
+    Logger.log("Active Menu Item", menuItem);
 
-        // Label
-        const spanLabel = document.createElement("span");
-        spanLabel.className = `tab-label`;
-        spanLabel.innerText = menuItem.label;
-        link.appendChild(spanLabel);
-
-        return link;
-      })
-      .forEach((menuElement) => element.appendChild(menuElement));
-
-    this.appendChild(element);
-  }
-
-  _Log(...messages) {
-    console.log("[Navigation.js]", ...messages);
+    menuItem.removeAttribute("href");
+    menuItem.classList.add("active");
   }
 }
 customElements.define("main-nav", Navigation);
