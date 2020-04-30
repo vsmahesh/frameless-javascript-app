@@ -1,5 +1,33 @@
 # FL - Framework less
 
+## Step 7
+
+### Shadow DOM
+
+- Modify the components to use shadow dom
+
+### Goals from last step
+
+- &#9745; CSS inside the html affecting other components
+- &#9744; DRY again
+  - &#9744; Setting the innerHTML from the html file
+  - &#9744; Line to Define the component. It is kind of repeating; isn't it?
+- &#9744; Limitations of the current model
+  <!-- - &#9745;&#9744; -->
+
+### Problems
+
+- DRY again
+  - Setting the innerHTML from the html file
+  - Line to Define the component. It is kind of repeating; isn't it?
+- Limitations of the current model
+
+### Next Steps
+
+- Its time for TypeScript!
+
+---
+
 ## Step 6
 
 ### Move Component html into an html file
